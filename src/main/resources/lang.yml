@@ -1,16 +1,5 @@
 # DOCUMENTATION: https://docs.artillex-studios.com/axafkzone.html
 
-help:
-  - " "
-  - "<gradient:#FF8800:#CC0055><b>AxAFKZone</b></gradient> <#FF7700>Help"
-  - " <#FF7700>➤ <white>/axafkzone reload <#DDDDDD>| <#FFAA00>Reload plugin"
-  - " <#FF7700>➤ <white>/axafkzone wand <#DDDDDD>| <#FFAA00>Give wand"
-  - " <#FF7700>➤ <white>/axafkzone create <zone> <#DDDDDD>| <#FFAA00>Create zone"
-  - " <#FF7700>➤ <white>/axafkzone delete <zone> <#DDDDDD>| <#FFAA00>Delete zone"
-  - " <#FF7700>➤ <white>/axafkzone redefine <zone> <#DDDDDD>| <#FFAA00>Update zone area"
-  - " <#FF7700>➤ <white>/axafkzone tp <zone> <#DDDDDD>| <#FFAA00>Teleport to center of zone"
-  - " "
-
 reload:
   success: "&#33FF33Plugin successfully reloaded!"
   failed: "&#FF3333Failed to reload the plugin! Something is wrong in the &f%file%&#FF3333 file, look in the console or use a yaml validator to fix the errors!"

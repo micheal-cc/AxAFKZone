@@ -2,7 +2,6 @@ package com.artillexstudios.axafkzone.commands;
 
 import com.artillexstudios.axafkzone.commands.subcommands.Create;
 import com.artillexstudios.axafkzone.commands.subcommands.Delete;
-import com.artillexstudios.axafkzone.commands.subcommands.Help;
 import com.artillexstudios.axafkzone.commands.subcommands.Redefine;
 import com.artillexstudios.axafkzone.commands.subcommands.Reload;
 import com.artillexstudios.axafkzone.commands.subcommands.Teleport;
@@ -11,19 +10,12 @@ import com.artillexstudios.axafkzone.zones.Zone;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.PermissionDefault;
-import org.jetbrains.annotations.NotNull;
-import revxrsal.commands.annotation.DefaultFor;
 import revxrsal.commands.annotation.Subcommand;
 import revxrsal.commands.bukkit.annotation.CommandPermission;
 import revxrsal.commands.orphan.OrphanCommand;
 
 @CommandPermission(value = "axafkzone.admin", defaultAccess = PermissionDefault.OP)
 public class Commands implements OrphanCommand {
-
-    @DefaultFor({"~", "~ help"})
-    public void help(@NotNull CommandSender sender) {
-        Help.INSTANCE.execute(sender);
-    }
 
     @Subcommand("wand")
     public void wand(Player sender) {
